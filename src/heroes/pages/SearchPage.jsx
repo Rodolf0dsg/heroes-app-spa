@@ -8,7 +8,7 @@ export const SearchPage = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log({location});
+    // console.log({location});
     const {q = ''} = queryString.parse( location.search );
 
     const heroes = getHeroesByName(q);
